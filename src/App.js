@@ -9,7 +9,6 @@ function App() {
   const getData = async() => {
     const res = await fetch(url);
     const jsonRes = await res.json();
-    console.log(jsonRes.data)
     setData(jsonRes.data)
   }
 
@@ -42,10 +41,10 @@ function App() {
                     </tr>
                 </thead>
                 <tbody>
-                  {data.map(element => {
+                  {data.map((element, i) => {
                     const className = element.position <= 4 ? "bg-success" : element.position >= data.length -3 ? "bg-danger" : ""
                     return(
-                      <tr className={className} >
+                      <tr key={i} className={className} >
                         <td>
                           {element.position}
                         </td>
