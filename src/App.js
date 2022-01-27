@@ -19,13 +19,13 @@ function App() {
   }, []);
   
   return (
-    <div className="container">
+    <div className="container bg-dark">
      <h1 className="d-flex justify-content-center bg-info">
         <span>Tabla de Posiciones de la Primera División de Argentina</span>
     </h1>
     <div className="w-100 p-3 ">
-            <h2 className="text-center" >Liga Profesional</h2>
-            <table className="w-100 p-3 m-300">
+            <h2 className="text-center text-light" >Liga Profesional</h2>
+            <table className="w-100 p-3 m-300 bg-light">
                 <thead>
                     <tr className="bg-secondary">
                         <th>Pos</th>
